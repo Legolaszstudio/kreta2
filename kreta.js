@@ -4,12 +4,12 @@ var th = Number(prompt("mennyi jegyet tudsz szerezni?"))       ; //tűréshatár
 var elak = Number(prompt("mit akarsz elérni?"))    ;  //az a jegy amit el akar érni
 
 
-var atlag = jegyek/jsz;
-var x = elak*jsz+elak*th-jegyek;
-var j2 = th*5;
-var j1 = jegyek+j2/jsz+th;
+var atlag = jegyek/jsz; //átlag
+var x = elak*jsz+elak*th-jegyek; //mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
+var j2 = th*5; // rontásnál mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
+var j1 = jegyek+j2/jsz+th; // az átlag amit a rontásnál számolunk
 
-switch (atlag) {
+switch (Math.round(atlag)) {
     case 1:
             switch (Math.round(elak)) {
                case 1 :
