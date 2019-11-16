@@ -530,7 +530,7 @@ switch (Math.round(atlag)) {
                            }
                         }
                     }
-                break
+                break;
             case 5:
                     if (x-5*th == 0) {
                         alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
@@ -555,8 +555,13 @@ switch (Math.round(atlag)) {
                            }
                         }
                     }
-        break;
-           }
+                    break;
+                    default:
+                      alert("valamit nem adtál meg jól");
+                  }
+               
+                    break;
+          
               
     //------------------------------------------------------------------------------------------------
        case 5:
