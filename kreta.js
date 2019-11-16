@@ -11,7 +11,7 @@ var j1 = jegyek+j2/jsz+th; // az átlag amit a rontásnál számolunk
 
 switch (Math.round(atlag)) {
     case 1:
-            switch (Math.round(elak)) {
+            switch (Math.round(elak)) { 
                case 1 :
                        alert("szerezz"+" "+th+"db"+" "+"eggyest") //ha csak 1 kell
                     break;
@@ -122,7 +122,7 @@ switch (Math.round(atlag)) {
                          alert("nem lehet megcsinálni")
                        } else {
                          if (j2-th==0) {
-                           console.log(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                           alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
                          }else{
                            if (j2-5*th>0) {
                              alert("nem lehet megcsinálni");
@@ -611,7 +611,7 @@ switch (Math.round(atlag)) {
                                  alert("nem lehet megcsinálni")
                                } else {
                                  if (j2-th==0) {
-                                   console.log(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                                   alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
                                  }else{
                                    if (j2-5*th>0) {
                                      alert("nem lehet megcsinálni");
@@ -646,7 +646,7 @@ switch (Math.round(atlag)) {
                                  alert("nem lehet megcsinálni")
                                } else {
                                  if (j2-th==0) {
-                                   console.log(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                                   alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
                                  }else{
                                    if (j2-5*th>0) {
                                      alert("nem lehet megcsinálni");
@@ -681,7 +681,7 @@ switch (Math.round(atlag)) {
                                  alert("nem lehet megcsinálni")
                                } else {
                                  if (j2-th==0) {
-                                   console.log(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                                   alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
                                  }else{
                                    if (j2-5*th>0) {
                                      alert("nem lehet megcsinálni");
