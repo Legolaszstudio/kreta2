@@ -50,54 +50,55 @@ switch (Math.round(atlag)) {
                             }
                           }
                   
-                  
-                  
-                  
-                          
-                      }
+                   }
                      
               } else {
-                if (x-5*th == 0) {
-                  alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
+                if(elak==atlag){
+                  alert("szerezz"+" "+String(th)+"db"+" "+"egyest");
                 }else{
-                  if(x-5*th > 0){
-                      alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+                  if (x-5*th == 0) {
+                    alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
                   }else{
-                     if((x-5*th) > th){
-                         if ((x-4*th) > th) {
-                             if ((x-3*th) > th) {
-                                 if ((x-2*th) > th) {
-                                  if (x-2*th < 0) {
-                                    alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
-                                  } else {
-                                    alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
-                                  }
-                                   
-                                 }
-                             }else{
-                              if (x-3*th < 0) {
-                                alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
-                              } else {
-                                alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
-                              }
-                             }
-                         }else{
-                          if (x-4*th < 0) {
-                            alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                          } else {
-                            alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                          }
-                           
-                         }
-                     }else{
-                      if (x-5*th < 0) {
-                        alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                      } else {
-                        alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                      }
-                       
-                     }
+                    if(x-5*th > 0){
+                        alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+                    }else{
+                       if((x-5*th) > th){
+                           if ((x-4*th) > th) {
+                               if ((x-3*th) > th) {
+                                   if ((x-2*th) > th) {
+                                    if (x-2*th < 0) {
+                                      alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
+                                    } else {
+                                      alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
+                                    }
+                                     
+                                   }
+                               }else{
+                                if (x-3*th < 0) {
+                                  alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
+                                } else {
+                                  alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
+                                }
+                               }
+                           }else{
+                            if (x-4*th < 0) {
+                              alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                            } else {
+                              alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                            }
+                             
+                           }
+                       }else{
+                        if (x-5*th < 0) {
+                          alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                        } else {
+                          alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                        }
+                         
+                       }
+                    }
                   }
+                
                 }
                 
                
@@ -150,9 +151,7 @@ switch (Math.round(atlag)) {
                 }
                 
                
-                
-
-            break;
+               break;
               case 3:
                 if (x-5*th == 0) {
                   alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
@@ -165,7 +164,7 @@ switch (Math.round(atlag)) {
                              if ((x-3*th) > th) {
                                  if ((x-2*th) > th) {
                                   if (x-2*th < 0) {
-                                    alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
+                                    alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes"); //2 1 
                                   } else {
                                     alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
                                   }
@@ -173,24 +172,24 @@ switch (Math.round(atlag)) {
                                  }
                              }else{
                               if (x-3*th < 0) {
-                                alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
+                                alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes"); //3 2 
                               } else {
-                                alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
+                                alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes"); // 3 2 
                               }
                              }
                          }else{
                           if (x-4*th < 0) {
-                            alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                            alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas"); //5 és vagy 4 kell
                           } else {
-                            alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                            alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas"); //5 és vagy 4 kell
                           }
                            
                          }
                      }else{
                       if (x-5*th < 0) {
-                        alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                        alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest"); //5 és vagy 4 kell
                       } else {
-                        alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                        alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest"); //5 és vagy 4 kell
                       }
                        
                      }
@@ -202,42 +201,42 @@ switch (Math.round(atlag)) {
                break;
                case 4: 
                if (x-5*th == 0) {
-                alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
+                alert("szerezz"+" "+th+"db"+" "+"ötöst"); //ha csak 5 kell
               }else{
                 if(x-5*th > 0){
-                    alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+                    alert("nem lehet megcsinálni");       //ha nem lehet megcsinálni 
                 }else{
                    if((x-5*th) > th){
                        if ((x-4*th) > th) {
                            if ((x-3*th) > th) {
                                if ((x-2*th) > th) {
                                 if (x-2*th < 0) {
-                                  alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
+                                  alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes"); //2 1 
                                 } else {
-                                  alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
+                                  alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes"); // 2 1  
                                 }
                                  
                                }
                            }else{
                             if (x-3*th < 0) {
-                              alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
+                              alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes"); //3 2 
                             } else {
-                              alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
+                              alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes"); // 3 2 
                             }
                            }
                        }else{
                         if (x-4*th < 0) {
-                          alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                          alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas"); //5 és vagy 4 kell
                         } else {
-                          alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                          alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas"); //5 és vagy 4 kell
                         }
                          
                        }
                    }else{
                     if (x-5*th < 0) {
-                      alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                      alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest"); //5 és vagy 4 kell
                     } else {
-                      alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                      alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest"); //5 és vagy 4 kell
                     }
                      
                    }
@@ -358,120 +357,117 @@ switch (Math.round(atlag)) {
                   
                     break;
                case 2:
-                if (elak<atlag) {
+                 if(elak==atlag){
+                   alert("szerezz"+" "+String(th)+"db"+" "+"kettest");
+                 }else{
+                  if (elak<atlag) {
                   
-              
-                      while(j1>elak){
-                 
-                          j2=j2-1;
-                          j1= (jegyek+j2)/(th+jsz);
-                          }
-                          while(j1>elak){
- 
-                            j2=j2-1;
-                            j1= (jegyek+j2)/(th+jsz);
-                            }
-                            if (j2-th<0) {
-                              alert("nem lehet megcsinálni")
-                            } else {
-                              if (j2-th==0) {
-                                alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
-                              }else{
-                                if (j2-5*th>0) {
-                                  alert("nem lehet megcsinálni");
-                                } else {
-                                  if (j2-th > th) {
-                                    if (j2-th*2 > th) {
-                                      if (j2-th*3 > th) {
-                                        if (j2-th*4 > th) {
-                          
-                                          if(Math.round(th-(j2-4*th))<0){
-                                            alert(String(Math.abs(Math.round(th-(j2-4*th))))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th-Math.abs(Math.round(th-(j2-4*th)))*2))+" "+"ötös");
-                                        }else{
-                                            alert(String(Math.round(th-(j2-4*th)))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th))+" "+"ötös");
-                                        }
-                                        }
-                          //----------------------------------------------------------------------------------------------------------------------------------------                
-                                        } else {
-                                            if(Math.round(th-(j2-3*th))<0){
-                                                alert(String(Math.abs(Math.round(th-(j2-3*th))))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th-Math.abs(Math.round(th-(j2-3*th)))*2))+" "+"négyes");
-                                            }else{
-                                                alert(String(Math.round(th-(j2-3*th)))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th))+" "+"négyes");// 3 4
-                                            }
-                                      }
-                          //--------------------------------------------------------------------------------------------------------------------------------            
-                                    } else {
-                                        if(Math.round(th-(j2-2*th))<0){
-                                            alert(String(Math.abs(Math.round(th-(j2-2*th))))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th-Math.abs(Math.round(th-(j2-2*th)))*2))+" "+"hármas");
-                                        }else{
-                                            alert(String(Math.round(th-(j2-2*th)))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th))+" "+"hármas");//2 3
-                                        }
-                                    }
-                                    //-------------------------------------------------------------------------------------------------------------------------------
-                                  } else {
-                                    if(Math.round(th-(j2-th))<0){
-                                        alert(String(Math.abs(Math.round(th-(j2-th))))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th-Math.abs(Math.round(th-(j2-th)))*2))+" "+"kettes");
-                                    }else{
-                                        alert(String(Math.round(th-(j2-th)))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th))+" "+"kettes"); //1 2 
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          
-                  
-                  
-                  
-              
-                     
-              } else {
-                if (x-5*th == 0) {
-                  alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
-                }else{
-                  if(x-5*th > 0){
-                      alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
-                  }else{
-                     if((x-5*th) > th){
-                         if ((x-4*th) > th) {
-                             if ((x-3*th) > th) {
-                                 if ((x-2*th) > th) {
-                                  if (x-2*th < 0) {
-                                    alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
-                                  } else {
-                                    alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
-                                  }
-                                   
-                                 }
-                             }else{
-                              if (x-3*th < 0) {
-                                alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
-                              } else {
-                                alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
-                              }
-                             }
-                         }else{
-                          if (x-4*th < 0) {
-                            alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                          } else {
-                            alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                          }
-                           
-                         }
-                     }else{
-                      if (x-5*th < 0) {
-                        alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                      } else {
-                        alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                      }
+                    while(j1>elak){
                        
-                     }
-                  }
-                }
-                
-               
+                                j2=j2-1;
+                                j1= (jegyek+j2)/(th+jsz);
+                                }
+                                while(j1>elak){
+       
+                                  j2=j2-1;
+                                  j1= (jegyek+j2)/(th+jsz);
+                                  }
+                                  if (j2-th<0) {
+                                    alert("nem lehet megcsinálni")
+                                  } else {
+                                    if (j2-th==0) {
+                                      alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                                    }else{
+                                      if (j2-5*th>0) {
+                                        alert("nem lehet megcsinálni");
+                                      } else {
+                                        if (j2-th > th) {
+                                          if (j2-th*2 > th) {
+                                            if (j2-th*3 > th) {
+                                              if (j2-th*4 > th) {
+                                
+                                                if(Math.round(th-(j2-4*th))<0){
+                                                  alert(String(Math.abs(Math.round(th-(j2-4*th))))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th-Math.abs(Math.round(th-(j2-4*th)))*2))+" "+"ötös");
+                                              }else{
+                                                  alert(String(Math.round(th-(j2-4*th)))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th))+" "+"ötös");
+                                              }
+                                              }
+                                //----------------------------------------------------------------------------------------------------------------------------------------                
+                                              } else {
+                                                  if(Math.round(th-(j2-3*th))<0){
+                                                      alert(String(Math.abs(Math.round(th-(j2-3*th))))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th-Math.abs(Math.round(th-(j2-3*th)))*2))+" "+"négyes");
+                                                  }else{
+                                                      alert(String(Math.round(th-(j2-3*th)))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th))+" "+"négyes");// 3 4
+                                                  }
+                                            }
+                                //--------------------------------------------------------------------------------------------------------------------------------            
+                                          } else {
+                                              if(Math.round(th-(j2-2*th))<0){
+                                                  alert(String(Math.abs(Math.round(th-(j2-2*th))))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th-Math.abs(Math.round(th-(j2-2*th)))*2))+" "+"hármas");
+                                              }else{
+                                                  alert(String(Math.round(th-(j2-2*th)))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th))+" "+"hármas");//2 3
+                                              }
+                                          }
+                                          //-------------------------------------------------------------------------------------------------------------------------------
+                                        } else {
+                                          if(Math.round(th-(j2-th))<0){
+                                              alert(String(Math.abs(Math.round(th-(j2-th))))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th-Math.abs(Math.round(th-(j2-th)))*2))+" "+"kettes");
+                                          }else{
+                                              alert(String(Math.round(th-(j2-th)))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th))+" "+"kettes"); //1 2 
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                
+                        
+                      } else {
+                      if (x-5*th == 0) {
+                        alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
+                      }else{
+                        if(x-5*th > 0){
+                            alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+                        }else{
+                           if((x-5*th) > th){
+                               if ((x-4*th) > th) {
+                                   if ((x-3*th) > th) {
+                                       if ((x-2*th) > th) {
+                                        if (x-2*th < 0) {
+                                          alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
+                                        } else {
+                                          alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
+                                        }
+                                         
+                                       }
+                                   }else{
+                                    if (x-3*th < 0) {
+                                      alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
+                                    } else {
+                                      alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
+                                    }
+                                   }
+                               }else{
+                                if (x-4*th < 0) {
+                                  alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                                } else {
+                                  alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                                }
+                                 
+                               }
+                           }else{
+                            if (x-5*th < 0) {
+                              alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                            } else {
+                              alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                            }
+                             
+                           }
+                        }
+                      }
+                      
+                 }
                  
-                
-              }
+            }
               
                    break;
                case 3:
@@ -567,9 +563,7 @@ switch (Math.round(atlag)) {
                 }
                 
            
-                 
-                
-                   break;
+                break;
                case 5:
                 if (x-5*th == 0) {
                   alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
@@ -735,106 +729,111 @@ switch (Math.round(atlag)) {
                 
                    break;
                case 3:
-                if (elak<atlag) {
+                 if(elak==atlag){
+                   alert("szerezz"+" "+String(th)+"db"+" "+"hármast");
+                 }else{
+                  if (elak<atlag) {
                 
               
-                  while(j1>elak){
- 
-                    j2=j2-1;
-                    j1= (jegyek+j2)/(th+jsz);
-                    }
-                    if (j2-th<0) {
-                      alert("nem lehet megcsinálni")
-                    } else {
-                      if (j2-th==0) {
-                        alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
-                      }else{
-                        if (j2-5*th>0) {
-                          alert("nem lehet megcsinálni");
-                        } else {
-                          if (j2-th > th) {
-                            if (j2-th*2 > th) {
-                              if (j2-th*3 > th) {
-                                if (j2-th*4 > th) {
-                  
-                                  if(Math.round(th-(j2-4*th))<0){
-                                    alert(String(Math.abs(Math.round(th-(j2-4*th))))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th-Math.abs(Math.round(th-(j2-4*th)))*2))+" "+"ötös");
-                                }else{
-                                    alert(String(Math.round(th-(j2-4*th)))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th))+" "+"ötös");
-                                }
-                                }
-                  //----------------------------------------------------------------------------------------------------------------------------------------                
-                                } else {
-                                    if(Math.round(th-(j2-3*th))<0){
-                                        alert(String(Math.abs(Math.round(th-(j2-3*th))))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th-Math.abs(Math.round(th-(j2-3*th)))*2))+" "+"négyes");
-                                    }else{
-                                        alert(String(Math.round(th-(j2-3*th)))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th))+" "+"négyes");// 3 4
-                                    }
-                              }
-                  //--------------------------------------------------------------------------------------------------------------------------------            
-                            } else {
-                                if(Math.round(th-(j2-2*th))<0){
-                                    alert(String(Math.abs(Math.round(th-(j2-2*th))))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th-Math.abs(Math.round(th-(j2-2*th)))*2))+" "+"hármas");
-                                }else{
-                                    alert(String(Math.round(th-(j2-2*th)))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th))+" "+"hármas");//2 3
-                                }
-                            }
-                            //-------------------------------------------------------------------------------------------------------------------------------
+                    while(j1>elak){
+   
+                      j2=j2-1;
+                      j1= (jegyek+j2)/(th+jsz);
+                      }
+                      if (j2-th<0) {
+                        alert("nem lehet megcsinálni")
+                      } else {
+                        if (j2-th==0) {
+                          alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                        }else{
+                          if (j2-5*th>0) {
+                            alert("nem lehet megcsinálni");
                           } else {
-                            if(Math.round(th-(j2-th))<0){
-                                alert(String(Math.abs(Math.round(th-(j2-th))))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th-Math.abs(Math.round(th-(j2-th)))*2))+" "+"kettes");
-                            }else{
-                                alert(String(Math.round(th-(j2-th)))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th))+" "+"kettes"); //1 2 
+                            if (j2-th > th) {
+                              if (j2-th*2 > th) {
+                                if (j2-th*3 > th) {
+                                  if (j2-th*4 > th) {
+                    
+                                    if(Math.round(th-(j2-4*th))<0){
+                                      alert(String(Math.abs(Math.round(th-(j2-4*th))))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th-Math.abs(Math.round(th-(j2-4*th)))*2))+" "+"ötös");
+                                  }else{
+                                      alert(String(Math.round(th-(j2-4*th)))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th))+" "+"ötös");
+                                  }
+                                  }
+                    //----------------------------------------------------------------------------------------------------------------------------------------                
+                                  } else {
+                                      if(Math.round(th-(j2-3*th))<0){
+                                          alert(String(Math.abs(Math.round(th-(j2-3*th))))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th-Math.abs(Math.round(th-(j2-3*th)))*2))+" "+"négyes");
+                                      }else{
+                                          alert(String(Math.round(th-(j2-3*th)))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th))+" "+"négyes");// 3 4
+                                      }
+                                }
+                    //--------------------------------------------------------------------------------------------------------------------------------            
+                              } else {
+                                  if(Math.round(th-(j2-2*th))<0){
+                                      alert(String(Math.abs(Math.round(th-(j2-2*th))))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th-Math.abs(Math.round(th-(j2-2*th)))*2))+" "+"hármas");
+                                  }else{
+                                      alert(String(Math.round(th-(j2-2*th)))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th))+" "+"hármas");//2 3
+                                  }
+                              }
+                              //-------------------------------------------------------------------------------------------------------------------------------
+                            } else {
+                              if(Math.round(th-(j2-th))<0){
+                                  alert(String(Math.abs(Math.round(th-(j2-th))))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th-Math.abs(Math.round(th-(j2-th)))*2))+" "+"kettes");
+                              }else{
+                                  alert(String(Math.round(th-(j2-th)))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th))+" "+"kettes"); //1 2 
+                              }
                             }
                           }
                         }
                       }
-                    }
-                  
-         } else {
-          if (x-5*th == 0) {
-            alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
-          }else{
-            if(x-5*th > 0){
-                alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+                    
+           } else {
+            if (x-5*th == 0) {
+              alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
             }else{
-               if((x-5*th) > th){
-                   if ((x-4*th) > th) {
-                       if ((x-3*th) > th) {
-                           if ((x-2*th) > th) {
-                            if (x-2*th < 0) {
-                              alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
-                            } else {
-                              alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
-                            }
-                             
-                           }
-                       }else{
-                        if (x-3*th < 0) {
-                          alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
-                        } else {
-                          alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
-                        }
-                       }
-                   }else{
-                    if (x-4*th < 0) {
-                      alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                    } else {
-                      alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                    }
-                     
-                   }
-               }else{
-                if (x-5*th < 0) {
-                  alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                } else {
-                  alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                }
-                 
-               }
+              if(x-5*th > 0){
+                  alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+              }else{
+                 if((x-5*th) > th){
+                     if ((x-4*th) > th) {
+                         if ((x-3*th) > th) {
+                             if ((x-2*th) > th) {
+                              if (x-2*th < 0) {
+                                alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
+                              } else {
+                                alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
+                              }
+                               
+                             }
+                         }else{
+                          if (x-3*th < 0) {
+                            alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
+                          } else {
+                            alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
+                          }
+                         }
+                     }else{
+                      if (x-4*th < 0) {
+                        alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                      } else {
+                        alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                      }
+                       
+                     }
+                 }else{
+                  if (x-5*th < 0) {
+                    alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                  } else {
+                    alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                  }
+                   
+                 }
+              }
             }
-          }
-         
+           
+                 }
+                
                 
               }
               
@@ -1109,112 +1108,115 @@ switch (Math.round(atlag)) {
               
                 break;
             case 4:
-              if (elak<atlag) {
+              if(elak==atlag){
+                alert("szerezz"+" "+String(th)+"db"+" "+"négyest");
+              }else{
+                if (elak<atlag) {
                 
             
-                while(j1>elak){
- 
-                  j2=j2-1;
-                  j1= (jegyek+j2)/(th+jsz);
-                  }
-                  if (j2-th<0) {
-                    alert("nem lehet megcsinálni")
-                  } else {
-                    if (j2-th==0) {
-                      alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
-                    }else{
-                      if (j2-5*th>0) {
-                        alert("nem lehet megcsinálni");
-                      } else {
-                        if (j2-th > th) {
-                          if (j2-th*2 > th) {
-                            if (j2-th*3 > th) {
-                              if (j2-th*4 > th) {
-                
-                                if(Math.round(th-(j2-4*th))<0){
-                                  alert(String(Math.abs(Math.round(th-(j2-4*th))))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th-Math.abs(Math.round(th-(j2-4*th)))*2))+" "+"ötös");
-                              }else{
-                                  alert(String(Math.round(th-(j2-4*th)))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th))+" "+"ötös");
-                              }
-                              }
-                //----------------------------------------------------------------------------------------------------------------------------------------                
-                              } else {
-                                  if(Math.round(th-(j2-3*th))<0){
-                                      alert(String(Math.abs(Math.round(th-(j2-3*th))))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th-Math.abs(Math.round(th-(j2-3*th)))*2))+" "+"négyes");
-                                  }else{
-                                      alert(String(Math.round(th-(j2-3*th)))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th))+" "+"négyes");// 3 4
-                                  }
-                            }
-                //--------------------------------------------------------------------------------------------------------------------------------            
-                          } else {
-                              if(Math.round(th-(j2-2*th))<0){
-                                  alert(String(Math.abs(Math.round(th-(j2-2*th))))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th-Math.abs(Math.round(th-(j2-2*th)))*2))+" "+"hármas");
-                              }else{
-                                  alert(String(Math.round(th-(j2-2*th)))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th))+" "+"hármas");//2 3
-                              }
-                          }
-                          //-------------------------------------------------------------------------------------------------------------------------------
+                  while(j1>elak){
+   
+                    j2=j2-1;
+                    j1= (jegyek+j2)/(th+jsz);
+                    }
+                    if (j2-th<0) {
+                      alert("nem lehet megcsinálni")
+                    } else {
+                      if (j2-th==0) {
+                        alert(Math.round(th)+"db"+" "+"egyes"+" "+"kell")
+                      }else{
+                        if (j2-5*th>0) {
+                          alert("nem lehet megcsinálni");
                         } else {
-                          if(Math.round(th-(j2-th))<0){
-                              alert(String(Math.abs(Math.round(th-(j2-th))))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th-Math.abs(Math.round(th-(j2-th)))*2))+" "+"kettes");
-                          }else{
-                              alert(String(Math.round(th-(j2-th)))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th))+" "+"kettes"); //1 2 
+                          if (j2-th > th) {
+                            if (j2-th*2 > th) {
+                              if (j2-th*3 > th) {
+                                if (j2-th*4 > th) {
+                  
+                                  if(Math.round(th-(j2-4*th))<0){
+                                    alert(String(Math.abs(Math.round(th-(j2-4*th))))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th-Math.abs(Math.round(th-(j2-4*th)))*2))+" "+"ötös");
+                                }else{
+                                    alert(String(Math.round(th-(j2-4*th)))+"db"+" "+"négyes"+" "+"és"+" "+String(Math.round(j2-4*th))+" "+"ötös");
+                                }
+                                }
+                  //----------------------------------------------------------------------------------------------------------------------------------------                
+                                } else {
+                                    if(Math.round(th-(j2-3*th))<0){
+                                        alert(String(Math.abs(Math.round(th-(j2-3*th))))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th-Math.abs(Math.round(th-(j2-3*th)))*2))+" "+"négyes");
+                                    }else{
+                                        alert(String(Math.round(th-(j2-3*th)))+"db"+" "+"hármas"+" "+"és"+" "+String(Math.round(j2-3*th))+" "+"négyes");// 3 4
+                                    }
+                              }
+                  //--------------------------------------------------------------------------------------------------------------------------------            
+                            } else {
+                                if(Math.round(th-(j2-2*th))<0){
+                                    alert(String(Math.abs(Math.round(th-(j2-2*th))))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th-Math.abs(Math.round(th-(j2-2*th)))*2))+" "+"hármas");
+                                }else{
+                                    alert(String(Math.round(th-(j2-2*th)))+"db"+" "+"kettes"+" "+"és"+" "+String(Math.round(j2-2*th))+" "+"hármas");//2 3
+                                }
+                            }
+                            //-------------------------------------------------------------------------------------------------------------------------------
+                          } else {
+                            if(Math.round(th-(j2-th))<0){
+                                alert(String(Math.abs(Math.round(th-(j2-th))))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th-Math.abs(Math.round(th-(j2-th)))*2))+" "+"kettes");
+                            }else{
+                                alert(String(Math.round(th-(j2-th)))+"db"+" "+"egyes"+" "+"és"+" "+String(Math.round(j2-th))+" "+"kettes"); //1 2 
+                            }
                           }
                         }
                       }
                     }
-                  }
-                
-                
-              
-                } else {
-                  if (x-5*th == 0) {
-                    alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
-                  }else{
-                    if(x-5*th > 0){
-                        alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
-                    }else{
-                       if((x-5*th) > th){
-                           if ((x-4*th) > th) {
-                               if ((x-3*th) > th) {
-                                   if ((x-2*th) > th) {
-                                    if (x-2*th < 0) {
-                                      alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
-                                    } else {
-                                      alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
-                                    }
-                                     
-                                   }
-                               }else{
-                                if (x-3*th < 0) {
-                                  alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
-                                } else {
-                                  alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
-                                }
-                               }
-                           }else{
-                            if (x-4*th < 0) {
-                              alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                            } else {
-                              alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
-                            }
-                             
-                           }
-                       }else{
-                        if (x-5*th < 0) {
-                          alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                        } else {
-                          alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
-                        }
-                         
-                       }
-                    }
-                  }
+                  
                   
                 
-                   
-              
-            }
+                  } else {
+                    if (x-5*th == 0) {
+                      alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
+                    }else{
+                      if(x-5*th > 0){
+                          alert("nem lehet megcsinálni")       //ha nem lehet megcsinálni 
+                      }else{
+                         if((x-5*th) > th){
+                             if ((x-4*th) > th) {
+                                 if ((x-3*th) > th) {
+                                     if ((x-2*th) > th) {
+                                      if (x-2*th < 0) {
+                                        alert("Szerezz"+" "+String(th-Math.abs(x-2*th))+"db"+" "+"kettes "+ " "+"és"+" "+String(th-(th-Math.abs(x-2*th))) +"db"+" "+"egyes") //2 1 
+                                      } else {
+                                        alert("Szerezz"+" "+String(Math.round((th-(x-2*th))))+"db"+" "+"kettes"+ " "+"és"+" "+String(Math.round((Math.abs(x-2*th)))) +"db"+" "+"egyes") // 2 1  
+                                      }
+                                       
+                                     }
+                                 }else{
+                                  if (x-3*th < 0) {
+                                    alert("Szerezz"+" "+String(th-Math.abs(x-3*th))+"db"+" "+"hármas"+ " "+"és"+" "+String(th-(th-Math.abs(x-3*th))) +"db"+" "+"kettes") //3 2 
+                                  } else {
+                                    alert("Szerezz"+" "+String(Math.round((th-(x-3*th))))+"db"+" "+"hármas"+ " "+"és"+" "+String(Math.round((Math.abs(x-3*th)))) +"db"+" "+"ketes") // 3 2 
+                                  }
+                                 }
+                             }else{
+                              if (x-4*th < 0) {
+                                alert("Szerezz"+" "+String(th-Math.abs(x-4*th))+"db"+" "+"négyes"+ " "+"és"+" "+String(th-(th-Math.abs(x-4*th))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                              } else {
+                                alert("Szerezz"+" "+String(Math.round((th-(x-4*th))))+"db"+" "+"négyes"+ " "+"és"+" "+String(Math.round((Math.abs(x-4*th)))) +"db"+" "+"hármas") //5 és vagy 4 kell
+                              }
+                               
+                             }
+                         }else{
+                          if (x-5*th < 0) {
+                            alert("Szerezz"+" "+String(th-Math.abs(x-5*th))+"db"+" "+"ötöst"+ " "+"és"+" "+String(th-(th-Math.abs(x-5*th))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                          } else {
+                            alert("Szerezz"+" "+String(Math.round((th-(x-5*th))))+"db"+" "+"ötöst"+ " "+"és"+" "+String(Math.round((Math.abs(x-5*th)))) +"db"+" "+"négyest") //5 és vagy 4 kell
+                          }
+                           
+                         }
+                      }
+                    }
+                    
+              }
+             
+                
+                   }
             
                 break;
                 case 5 :
@@ -1495,6 +1497,9 @@ switch (Math.round(atlag)) {
                     
                        break;
                    case 5:
+                     if(elak==atlag){
+                       alert("szerezz"+" "+String(th)+"db"+" "+"ötöst");
+                     }
                     if (elak<atlag) {
                      
                   
@@ -1602,9 +1607,7 @@ switch (Math.round(atlag)) {
                       }
                     }
                     
-               
-                     
-                    
+      
                   }
                   
                        break;
