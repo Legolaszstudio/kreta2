@@ -882,9 +882,7 @@ switch (Math.round(atlag)) {
                   }
                 }
                 
-               
-                 
-                
+
                    break;
                case 5: 
                if (x-5*th == 0) {
@@ -1263,8 +1261,7 @@ switch (Math.round(atlag)) {
                   }
                 }
                 
-               
-              
+
                         break;
                     default:
                       alert("valamit nem adtál meg jól");
@@ -1556,13 +1553,7 @@ switch (Math.round(atlag)) {
                           }
                         }
                       
-                      
-                      
-                      
-                      
-                            
-                          
-                         
+  
                   } else {
                     if (x-5*th == 0) {
                       alert("szerezz"+" "+th+"db"+" "+"ötöst") //ha csak 5 kell
@@ -1606,8 +1597,7 @@ switch (Math.round(atlag)) {
                          }
                       }
                     }
-                    
-      
+
                   }
                   
                        break;
