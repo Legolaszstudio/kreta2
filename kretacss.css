@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+/*==========================================================================/*/
+html {
+    background: fixed;
+    background-color: black;
+}
+/*==============================================================/*/
+
+.alma {
+ color: orange;
+ font-family: 'Work Sans', sans-serif;
+ position: relative;
+    top: 273px;
+    left: 679px;
+    
+}
+ /*===========================================================/*/
+  input {
+      background-color: orange;
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      position: relative;
+      top: 349px;
+      left: 284px;
+      font-size: 22px;
+      border-radius: 30px;
+      text-indent: 1px;
+      text-size-adjust: 0px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 20px;
+    
+  }
+  /*=================================================================/*/
+  .krsz {
+    font-size: 30px;
+    position: relative;
+    top: 474px;
+    left: -297px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: orange;
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 35%;
+    opacity: 1;
+  transition: 0.3s;
+  width: 191px;
+  border-radius: 30px;
+  }
+  .krsz:hover {opacity: 0.6}
+   /*=================================================================/*/
+  .elak{
+    background-color: orange;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    top: 349px;
+    left: 284px;
+    font-size: 22px;
+    border-radius: 30px;
+    text-indent: 34px;
+    text-size-adjust: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font: 400 13.3333px 'Work Sans', ;
+    text-transform: 20px;
+
+    
+  }
+  /*=================================================================/*/
+  .th {
+    background-color: orange;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    top: 349px;
+    left: 284px;
+    font-size: 22px;
+    border-radius: 30px;
+    text-indent: 34px;
+    text-size-adjust: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font: 400 13.3333px 'Work Sans', ;
+    text-transform: 20px;
+    width: 295px;
+    height: 25px;
+  }
+   /*=================================================================/*/
+   .jsz{
+    background-color: orange;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    top: 349px;
+    left: 284px;
+    font-size: 22px;
+    border-radius: 30px;
+    text-indent: 43px;
+    text-size-adjust: 0px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font: 400 13.3333px 'Work Sans', ;
+    text-transform: 20px;
+
+    
+  }
+    /*=================================================================/*/
+    .jegyek{
+        background-color: orange;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        position: relative;
+        top: 349px;
+        left: 284px;
+        font-size: 22px;
+        border-radius: 30px;
+        text-indent: 44px;
+        text-size-adjust: 0px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 20px;
+        font: 400 13.3333px 'Work Sans', ;
+        text-transform: 20px;
+    }
