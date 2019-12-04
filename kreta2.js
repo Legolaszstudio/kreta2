@@ -21,6 +21,9 @@ function buttonClick(jegyek,jsz,th,elak) {
     var x = elak * jsz + elak * th - jegyek; //mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
     var j2 = th * 5; // rontásnál mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
     var j1 = jegyek + j2 / jsz + th; // az átlag amit a rontásnál számolunk
+    if(Number.isInteger(x)== false){
+        x= Math.round(x);
+    }
 
     switch (Math.round(atlag)) {
         case 1:
