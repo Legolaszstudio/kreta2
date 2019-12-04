@@ -1,33 +1,132 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="kretacss.css" /> 
-    </head>
-    <head>
-        <script src="kreta.js"></script>
-     
-    </head>
-    <body>
-        <h1 class="alma">
-            András jegyszámolója
-        </h1 >
-        <input class="jegyek" type="text" placeholder="Jegyek összege" id="SUM">
-        <input class= "jsz" type="text" placeholder="Jegyek száma" id="COUNT">
-        <input class="th" type="text" placeholder="Mennyi jegyet tudsz szerezni" id="TURESH">
-        <input class="elak" type="text" placeholder="Mit akarsz elérni" id="ELER">
-        <button class="krsz" onclick="getData()">
-            Csináldd!
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.10.7, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.10.7, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="menu cid-rJHVbP7KH0" once="menu" id="menu1-0">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </button>
-        <div id="output"></div>
-        <script>
-            function getData(){
-                var sum = Number(document.getElementById("SUM").value);
-                var count = Number(document.getElementById("COUNT").value);
-                var turesh = Number(document.getElementById("TURESH").value);
-                var eler = Number(document.getElementById("ELER").value);
-                buttonClick(sum,count,turesh,eler);
-                document.getElementById("output").innerText = buttonClick(sum,count,turesh,eler);
-            }
-        </script>
-    </body>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="">
+                         <img src="assets/images/logo2.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="">
+                        AndrásHub</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4">
+                        
+                        Jegyszámoló</a>
+                </li></ul>
+            
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a></a></section><section class="mbr-section form3 cid-rJHVg5xjg0" id="form3-1">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="align-center pb-2 mbr-fonts-style display-2">
+                    Jegyszámolás</h2>
+                <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-5">
+                    Írd be az adataidat</h3>
+            </div>
+        </div>
+
+        <div class="row py-2 justify-content-center">
+            <div class="col-12 col-lg-6  col-md-8 " data-form-type="formoid">
+                <!---Formbuilder Form--->
+                <form method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form">
+                    <div class="dragArea row">
+                        <div class="form-group col">
+                            <input name="sum" type="text" placeholder="Jegyek összege" required="required" class="form-control display-7" id="email-form3-1">
+                            <br>
+                            <input name="count" type="text" placeholder="Jegyek száma" required="required" class="form-control display-7" id="email-form3-1">
+                            <br>
+                            <input name="th" type="text" placeholder="Hány db jegyet tudsz szerezni?" required="required" class="form-control display-7" id="email-form3-1">
+                            <br>
+                            <input name="reach" type="text" placeholder="Mit szeretnél elérni" required="required" class="form-control display-7" id="email-form3-1">
+                        </div>
+                        <div class="col-auto input-group-btn"><button type="submit" class="btn btn-primary display-4" onclick="getVars()">Számolj!</button></div>
+                    </div>
+                </form><!---Formbuilder Form--->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services5 cid-rJHZtyiq18" id="services5-2">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                <h2 class="align-left mbr-fonts-style m-0 display-1" id="outputDialog">
+                    
+                </h2>
+            </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="kreta2.js"></script>
+  
+  
+</body>
 </html>
