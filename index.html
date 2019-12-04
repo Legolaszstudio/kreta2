@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="kretacss.css" /> 
+    </head>
+    <head>
+        <script src="kreta.js"></script>
+     
+    </head>
+    <body>
+        <h1 class="alma">
+            András jegyszámolója
+        </h1 >
+        <input class="jegyek" type="text" placeholder="Jegyek összege" id="SUM">
+        <input class= "jsz" type="text" placeholder="Jegyek száma" id="COUNT">
+        <input class="th" type="text" placeholder="Mennyi jegyet tudsz szerezni" id="TURESH">
+        <input class="elak" type="text" placeholder="Mit akarsz elérni" id="ELER">
+        <button class="krsz" onclick="getData()">
+            Csináldd!
+        </button>
+        <div id="output"></div>
+        <script>
+            function getData(){
+                var sum = Number(document.getElementById("SUM").value);
+                var count = Number(document.getElementById("COUNT").value);
+                var turesh = Number(document.getElementById("TURESH").value);
+                var eler = Number(document.getElementById("ELER").value);
+                buttonClick(sum,count,turesh,eler);
+                document.getElementById("output").innerText = buttonClick(sum,count,turesh,eler);
+            }
+        </script>
+    </body>
+</html>
