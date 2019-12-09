@@ -1,7 +1,7 @@
-var jegyek = prompt("jegyeid összege");
-var jsz = prompt("jegyeid száma");
-var th = prompt("mennyi jegyet tudsz szerezni");
-var elak = prompt("mit akarsz elérni");
+var jegyek = 9;
+var jsz = 3 ;
+var th = 5 ;
+var elak = 4.25;
 
 var atlag = jegyek / jsz; //átlag
 var x = elak * jsz + elak * th - jegyek; //mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
@@ -79,6 +79,9 @@ if (elak > atlag) {
                 // 3, 4 tartomány
                 //4,5 tartomány
                 break;
+                case 5:
+                    alert(String(th)+"db"+" "+"ötöst");
+                    break;
 
             default:
                 alert("valamit nem jól adtál meg");
