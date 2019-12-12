@@ -1,9 +1,7 @@
-var jegyek = prompt("jegyeid összege");
+var jegyek = prompt("jegyeid összege")
 var jsz = prompt("jegyeid száma");
-var th = prompt("mennyi jegyet tudsz szerezni");
-var elak = prompt("mit akarsz elérni");
-
-
+var th = prompt("mennyi jegy alatt akarod elérni?");
+var elak = prompt("milyen átlagot akarsz elérni?");
 
 var atlag = jegyek / jsz; //átlag
 var x = elak * jsz + elak * th - jegyek; //mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
@@ -93,10 +91,11 @@ if (elak > atlag) {
 } else {
     if (j2 - th < 0) {
         alert("nem lehet megcsinálni")
+    }else{
     switch (ww) {
         case 1:
 
-            while (t + n * 2 !== x) {
+            while (t + n * 2 !== j2) {
 
                 t = t - 1;
                 n = n + 1;
@@ -105,7 +104,7 @@ if (elak > atlag) {
             alert(String(n) + "db" + " " + "kettes" + " " + "és" + " " + String(t) + "db" + " " + "egyes");
             break;
         case 2:
-            while (t * 2 + n * 3 !== x) {
+            while (t * 2 + n * 3 !== j2) {
 
                 t = t - 1;
                 n = n + 1;
@@ -116,7 +115,7 @@ if (elak > atlag) {
             //2, 3 tartomány 
             break;
         case 3:
-            while (t * 3 + n * 4 !== x) {
+            while (t * 3 + n * 4 !== j2) {
 
                 t = t - 1;
                 n = n + 1;
@@ -126,7 +125,7 @@ if (elak > atlag) {
             // 3, 4 tartomány
             break;
         case 4:
-            while (t * 4 + n * 5 !== x) {
+            while (t * 4 + n * 5 !== j2) {
 
                 t = t - 1;
                 n = n + 1;
