@@ -1,7 +1,7 @@
-var jegyek = prompt("jegyeid összege")
-var jsz = prompt("jegyeid száma");
-var th = prompt("mennyi jegy alatt akarod elérni?");
-var elak = prompt("milyen átlagot akarsz elérni?");
+var jegyek = Number(prompt("jegyeid összege"));
+var jsz = Number(prompt("jegyeid száma"));
+var th = Number(prompt("mennyi jegy alatt akarod elérni?"));
+var elak = Number(prompt("milyen átlagot akarsz elérni?"));
 
 var atlag = jegyek / jsz; //átlag
 var x = elak * jsz + elak * th - jegyek; //mennyi jegyet kell hozzáadni, hogy elérjük az adottátlagot
@@ -32,9 +32,9 @@ var cc = String(j2 / th);
 var ww = Number(cc.slice(0, 1));
 var w = Number(c.slice(0, 1));
 
-if (elak > atlag) {
+if (elak >= atlag) {
     if (x - 5 * th > 0) {
-        alert("nem lehet megcsinálni");//ha nem lehet megcsinálni 
+        alert("nem lehet megcsinálni");//ha nem lehet megcsinálni
     } else {
         switch (w) {
             case 1:
@@ -43,7 +43,7 @@ if (elak > atlag) {
 
                     t = t - 1;
                     n = n + 1;
-                } //1, 2 tartomány 
+                } //1, 2 tartomány
 
                 alert(String(n) + "db" + " " + "kettes" + " " + "és" + " " + String(t) + "db" + " " + "egyes");
                 break;
@@ -52,18 +52,18 @@ if (elak > atlag) {
 
                     t = t - 1;
                     n = n + 1;
-                } //1, 2 tartomány 
+                } //1, 2 tartomány
 
                 alert(String(n) + "db" + " " + "hármas" + " " + "és" + " " + String(t) + "db" + " " + "kettes");
                 // 3, 4 tartomány
-                //2, 3 tartomány 
+                //2, 3 tartomány
                 break;
             case 3:
                 while (t * 3 + n * 4 !== x) {
 
                     t = t - 1;
                     n = n + 1;
-                } //1, 2 tartomány 
+                } //1, 2 tartomány
 
                 alert(String(n) + "db" + " " + "négyes" + " " + "és" + " " + String(t) + "db" + " " + "hármas");
                 // 3, 4 tartomány
@@ -73,7 +73,7 @@ if (elak > atlag) {
 
                     t = t - 1;
                     n = n + 1;
-                } //1, 2 tartomány 
+                } //1, 2 tartomány
 
                 alert(String(n) + "db" + " " + "négyes" + " " + "és" + " " + String(t) + "db" + " " + "ötös");
                 // 3, 4 tartomány
@@ -99,7 +99,7 @@ if (elak > atlag) {
 
                 t = t - 1;
                 n = n + 1;
-            } //1, 2 tartomány 
+            } //1, 2 tartomány
 
             alert(String(n) + "db" + " " + "kettes" + " " + "és" + " " + String(t) + "db" + " " + "egyes");
             break;
@@ -108,18 +108,18 @@ if (elak > atlag) {
 
                 t = t - 1;
                 n = n + 1;
-            } //1, 2 tartomány 
+            } //1, 2 tartomány
 
             alert(String(n) + "db" + " " + "hármas" + " " + "és" + " " + String(t) + "db" + " " + "kettes");
             // 3, 4 tartomány
-            //2, 3 tartomány 
+            //2, 3 tartomány
             break;
         case 3:
             while (t * 3 + n * 4 !== j2) {
 
                 t = t - 1;
                 n = n + 1;
-            } //1, 2 tartomány 
+            } //1, 2 tartomány
 
             alert(String(n) + "db" + " " + "négyes" + " " + "és" + " " + String(t) + "db" + " " + "hármas");
             // 3, 4 tartomány
@@ -129,7 +129,7 @@ if (elak > atlag) {
 
                 t = t - 1;
                 n = n + 1;
-            } //1, 2 tartomány 
+            } //1, 2 tartomány
 
             alert(String(n) + "db" + " " + "négyes" + " " + "és" + " " + String(t) + "db" + " " + "ötös");
             // 3, 4 tartomány
